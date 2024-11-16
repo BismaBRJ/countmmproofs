@@ -1,0 +1,3 @@
+# Just so that local, possibly huge Metamath
+# databases don't get included in the repository
+*.mm
