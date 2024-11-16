@@ -1,0 +1,10 @@
+this $= step1 step2 step3 $.
+
+that $=
+this step4
+step5 $.
+
+another
+$=
+this
+that $.
