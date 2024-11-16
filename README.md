@@ -102,6 +102,14 @@ You need to compile the C code first before using it.
 
     The program will then estimate the number of proofs in that file and then print out the result.
 
+    **Fun fact:** you can actually use it on (ASCII) text files of oher formats too! For example, (especially if you just want to test this thing out and you don't have a Metamath database yet) you could run
+
+    ```
+    ./countmmproofs smalltest.txt
+    ```
+
+    if you also downloaded the `smalltest.txt` file and it's in the same folder.
+
 **Note:**
 
 - If you want to try it on another Metamath database file, you only need to repeat steps 6 and 7 using that other Metamath database.
