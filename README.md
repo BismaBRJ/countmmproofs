@@ -44,7 +44,7 @@ I say overestimate, because who knows, some of those `$=` occurrences are actual
 
 ## Why C?
 
-I first wrote this program in about 2 hours for the mere purpose of estimating the number of proofs in `set.mm` (GitHub repository: <https://github.com/metamath/set.mm>), which, at the time of writing this README file,
+I first wrote this program in about two hours for the mere purpose of estimating the number of proofs in `set.mm` (GitHub repository: <https://github.com/metamath/set.mm>), which, at the time of writing this README file,
 
 - is the largest existing Metamath database,
 
@@ -56,7 +56,7 @@ At the time of writing this README file, Python is usually my go-to scripting la
 
 I especially appreciate C's simple I/O interface that can read one ASCII character (really, one byte) at a time using the `fgetc` function, so the program doesn't have to first load in the entire text file before reading from it.
 
-I quickly wrote up a really simple, linear time algorithm--that is, an algorithm of \( O(n) \) time complexity (\(n\) being the number of bytes in the given Metamath database)--to count the number of occurrences of the `$=` substring in the entire Metamath database.
+I quickly wrote up a really simple, linear time algorithm--that is, an algorithm of O(n) time complexity (n being the number of bytes in the given Metamath database)--to count the number of occurrences of the `$=` substring in the entire Metamath database.
 
 The result? In about four seconds (on my machine), it found exactly 43565 occurrences of the `$=` token (in the `set.mm` file in the [2813f8eb3a62e829c4c7afea58513c2d77d4c98f](https://www.github.com/metamath/set.mm/commit/2813f8eb3a62e829c4c7afea58513c2d77d4c98f) commit of the `set.mm` repository), so that's my (over)estimate for the number proofs in `set.mm` at that time. (Honestly, that is quite slow already. I wonder how long a Python program would take!)
 
@@ -76,7 +76,7 @@ You need to compile the C code first before using it.
 
 3. Navigate to the folder where you've just downloaded that `countmmproofs.c` file.
 
-4. Make sure to have a command prompt or terminal open at that same folder.
+4. Make sure to have a command prompt or terminal open **at that same folder.**
 
 5. Using the terminal, compile that `countmmproofs.c` file. For example, if you're using GCC, you can try to run the following:
 
@@ -88,9 +88,9 @@ You need to compile the C code first before using it.
 
     The `countmmproofs` executable (or `countmmproofs.exe` if you're on Windows) should show up afterwards.
 
-6. Put your Metamath database file there (feel free to copy it in rather than actually moving it there; do it however you see fit), that you want to use this program on.
+6. Put your Metamath database file there (feel free to copy it in rather than actually moving it there; do it however you see fit) that you want to use this program on.
 
-7. Still on a terminal on that folder (open another terminal if you closed it already), run
+7. Still on a terminal **on that folder** (open another terminal if you closed it already), run
 
     ```
     ./countmmproofs the_metamath_database.mm
@@ -108,6 +108,6 @@ You need to compile the C code first before using it.
 
 - If this repository or software gets updated somehow and you'd like to update the one on your machine, you'd have to redo all the steps from the beginning.
 
-I may or may not update this thing from time to time. I have a feeling that the file format for Metamath databases may change quite significantly one day, after stumbling accross this post on the Google Groups maling list, about modularity: <https://groups.google.com/g/metamath/c/ZlRle52FVO0/m/35ZVNUFQBwAJ>
+I may or may not update this thing from time to time. I have a feeling that the file format for Metamath databases might change quite significantly one day, after stumbling accross this post on the Google Groups maling list, about modularity: <https://groups.google.com/g/metamath/c/ZlRle52FVO0/m/35ZVNUFQBwAJ>
 
 Either way, enjoy!
